@@ -7,6 +7,11 @@ pipeline {
                sh 'echo "This is frontend development branch"' 
             }
         }
+	stage('UI design') {
+	    steps {
+	    	echo 'This is a new stage in frontend'
+	    }
+	}
      
         stage('Test phase') { 
             steps { 
