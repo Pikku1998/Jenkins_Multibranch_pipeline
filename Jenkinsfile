@@ -4,7 +4,9 @@ pipeline {
     stages {   
         stage('Backend branch') { 
             steps { 
-               sh 'echo "This is backend development branch"' 
+               sh 'echo "This is backend development branch"'
+
+               sh 'echo "Added an update in backend."' 
             }
         }
      
